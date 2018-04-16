@@ -1,6 +1,7 @@
-import { ObservableArray } from 'tns-core-modules/data/observable-array';
+import { ObservableArray } from "tns-core-modules/data/observable-array";
 import { Property } from "tns-core-modules/ui/core/view";
-import { GridLayout } from 'tns-core-modules/ui/layouts/grid-layout';
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
+
 export declare const listWidthProperty: Property<FilterableListpicker, string>;
 export declare const listHeightProperty: Property<FilterableListpicker, string>;
 export declare const modalProperty: Property<FilterableListpicker, boolean>;
