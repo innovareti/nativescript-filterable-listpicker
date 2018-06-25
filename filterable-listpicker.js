@@ -41,9 +41,7 @@ var FilterableListpicker = (function (_super) {
         textfield.on("textChange", function (data) {
             filtering = true;
             _this.source = unfilteredSource.filter(function (item) {
-                if (item.name) {
-                    return item.name.toLowerCase().indexOf(data.value.toLowerCase()) !== -1;
-                }
+                return item.name.toLowerCase().indexOf(data.value.toLowerCase()) !== -1;
             });
             if (_this.source.length === 0) {
                 if (data.value) {
@@ -149,10 +147,10 @@ var FilterableListpicker = (function (_super) {
             textField.focus();
         }
     };
-    FilterableListpicker.canceledEvent = "canceled";
-    FilterableListpicker.itemTappedEvent = "itemTapped";
     return FilterableListpicker;
 }(grid_layout_1.GridLayout));
+FilterableListpicker.canceledEvent = "canceled";
+FilterableListpicker.itemTappedEvent = "itemTapped";
 exports.FilterableListpicker = FilterableListpicker;
 exports.listWidthProperty.register(FilterableListpicker);
 exports.listHeightProperty.register(FilterableListpicker);

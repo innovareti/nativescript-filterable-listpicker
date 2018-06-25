@@ -79,9 +79,7 @@ export class FilterableListpicker extends GridLayout {
         textfield.on("textChange", (data: any) => {
             filtering = true;
             this.source = unfilteredSource.filter((item) => {
-                if (item.name) {
-                    return item.name.toLowerCase().indexOf(data.value.toLowerCase()) !== -1;
-                }
+                return item.name.toLowerCase().indexOf(data.value.toLowerCase()) !== -1;
             });
 
             if (this.source.length === 0) {
