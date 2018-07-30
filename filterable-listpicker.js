@@ -147,10 +147,10 @@ var FilterableListpicker = (function (_super) {
             textField.focus();
         }
     };
+    FilterableListpicker.canceledEvent = "canceled";
+    FilterableListpicker.itemTappedEvent = "itemTapped";
     return FilterableListpicker;
 }(grid_layout_1.GridLayout));
-FilterableListpicker.canceledEvent = "canceled";
-FilterableListpicker.itemTappedEvent = "itemTapped";
 exports.FilterableListpicker = FilterableListpicker;
 exports.listWidthProperty.register(FilterableListpicker);
 exports.listHeightProperty.register(FilterableListpicker);

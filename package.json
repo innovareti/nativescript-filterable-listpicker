@@ -56,12 +56,12 @@
     "homepage": "https://github.com/davecoffin/nativescript-filterable-listpicker",
     "readmeFilename": "README.md",
     "devDependencies": {
-        "tns-core-modules": "^3.1.0",
-        "tns-platform-declarations": "^3.1.0",
-        "typescript": "~2.3.0",
         "prompt": "^1.0.0",
         "rimraf": "^2.5.0",
-        "tslint": "^5.0.0"
+        "tns-core-modules": "4.0.0",
+        "tns-platform-declarations": "4.0.0",
+        "tslint": "^5.10.0",
+        "typescript": "~2.4.2"
     },
     "dependencies": {},
     "bootstrapper": "nativescript-plugin-seed"
