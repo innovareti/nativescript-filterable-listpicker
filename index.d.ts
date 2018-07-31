@@ -8,7 +8,6 @@ export declare const modalProperty: Property<FilterableListpicker, boolean>;
 export declare const sourceProperty: Property<FilterableListpicker, ObservableArray<string>>;
 export declare const itemTappedProperty: Property<FilterableListpicker, string>;
 export declare const cancelTappedProperty: Property<FilterableListpicker, string>;
-@CSSType("GridLayout")
 export declare class FilterableListpicker extends GridLayout {
     constructor();
     private innerComponent;
