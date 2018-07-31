@@ -1,5 +1,5 @@
 import { ObservableArray } from "tns-core-modules/data/observable-array";
-import { Property, CSSType } from "tns-core-modules/ui/core/view";
+import { Property } from "tns-core-modules/ui/core/view";
 import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
 
 export declare const listWidthProperty: Property<FilterableListpicker, string>;
