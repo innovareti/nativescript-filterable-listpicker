@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FilterableListpicker = exports.sourceProperty = exports.hintTextProperty = exports.hideFilterProperty = exports.focusOnShowProperty = exports.blurProperty = exports.dimmerColorProperty = exports.listHeightProperty = exports.listWidthProperty = void 0;
 var platform_1 = require("tns-core-modules/platform");
 var view_1 = require("tns-core-modules/ui/core/view");
 var enums = require("tns-core-modules/ui/enums");
@@ -16,7 +17,8 @@ exports.focusOnShowProperty = new view_1.Property({ name: "focusOnShow", default
 exports.hideFilterProperty = new view_1.Property({ name: "hideFilter", defaultValue: false });
 exports.hintTextProperty = new view_1.Property({ name: "hintText", defaultValue: "Enter text to filter..." });
 exports.sourceProperty = new view_1.Property({
-    name: "source", defaultValue: undefined, affectsLayout: true, valueChanged: function (target, oldValue, newValue) {
+    name: "source", defaultValue: undefined, affectsLayout: true,
+    valueChanged: function (target, oldValue, newValue) {
         if (!filtering) {
             while (unfilteredSource.length) {
                 unfilteredSource.pop();
